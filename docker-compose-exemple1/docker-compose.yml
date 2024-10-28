@@ -1,0 +1,12 @@
+
+# Identique que
+# $ docker run --name dozzle -d --volume=/var/run/docker.sock:/var/run/docker.sock:ro -p 8888:8080 ftutorials/dozzle
+
+services:
+  dozzle:
+    container_name: dozzle
+    image: ftutorials/dozzle
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 8888:8080

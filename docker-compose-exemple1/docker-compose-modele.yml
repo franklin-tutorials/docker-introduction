@@ -1,0 +1,14 @@
+
+services:  # conteneurs, équivalent de docker container run
+  servicename: # nom du conteneur, également nom DNS dans le réseau
+    container_name: # Optionnel 
+    image: # Optionnel en cas de build:
+    command: # Optionnel, remplace la commande CMD par défaut de l'image
+    environment: # Optionnel. Equivalent de -e dans docker container run
+    ports: # Optionnel. Equivalent de -p dans docker container run
+    volumes: # Optionnel. Equivalent de -v dans docker container run
+  servicename2:
+
+volumes: # Optionnel. Equivalent de docker volume create
+
+networks: # Optionnel. Equivalent de docker network create
